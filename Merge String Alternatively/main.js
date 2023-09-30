@@ -38,7 +38,7 @@ var mergeAlternately = function(word1, word2) {
     // Store an empty result string
     let result = ''
     // Loop from 0 to the longest word length
-    for (i = 0; i < word1.length || word2.length; i++) {
+    for (i = 0; i < word1.length || i < word2.length; i++) {
         //console.log(`Index=${i}, letter1=${word1[i]}, Letter2=${word2[i]}, result=${result}`)
         // Add current index's letter from word1 to result, then do the same for word2 (add empty string if letter is undefined)
         result += word1[i] || '';
